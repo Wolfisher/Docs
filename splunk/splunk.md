@@ -25,6 +25,6 @@
     | convert ctime(_time) as startupTime] 
 | join type=left keyword2
     [ search index=index1 OR index=index2 logger=""  port  | table field1,field2,field3,field4
-| where ("$module$"="all" OR module="$module$")
+| where ("$filter2$"="all" OR filter2="$filter2$")
 | table field1,field2,field3,field4
 ```
